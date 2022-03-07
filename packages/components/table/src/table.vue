@@ -58,12 +58,12 @@
         </table>
       </div>
       <div ref="bodyWrapper" :style="bodyHeight" :class="ns.e('body-wrapper')">
-        <el-scrollbar
+        <!-- <el-scrollbar
           ref="scrollWrapper"
           :height="maxHeight ? undefined : height"
           :max-height="maxHeight ? height : undefined"
           :view-style="scrollbarViewStyle"
-        >
+        > -->
           <table
             ref="tableBody"
             :class="ns.e('body')"
@@ -113,7 +113,7 @@
           >
             <slot name="append"></slot>
           </div>
-        </el-scrollbar>
+        <!-- </el-scrollbar> -->
       </div>
       <div v-if="border || isGroup" :class="ns.e('border-left-patch')"></div>
     </div>
